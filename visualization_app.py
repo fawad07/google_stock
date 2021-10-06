@@ -8,7 +8,7 @@ import pickle
 st.title("Google Stock")
 @st.cache
 def load_data(num_rows=1000):
-    df = pd.read_csv(r"C:\Users\samina\Desktop\GA_DATA_SCIENCE\Data_Sci\Homework\Unit4\Final_project\google.csv", nrows=num_rows)
+    df = pd.read_csv(r"https://raw.githubusercontent.com/fawad07/google_stock/main/google.csv", nrows=num_rows)
     return df
 
 @st.cache
